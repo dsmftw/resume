@@ -6,6 +6,7 @@
 *.dvi
 *.tex~
 *.backup
+!ik-resume.pdf
 
 ### Vim ###
 # swap
