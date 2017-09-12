@@ -1,10 +1,16 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ik_resume}[2017/09/07 Custom resume class for ik]
+\ProvidesClass{ik-resume}[2017/09/07 Custom class for ik-resume]
 \LoadClass{article}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{microtype}
+\RequirePackage[sfdefault]{roboto}
 \RequirePackage{titlesec}
 \RequirePackage{titling}
 \RequirePackage{titleps}
 \RequirePackage[margin=.8in]{geometry}
+
+%\renewcommand*\familydefault{\sfdefault}
 
 %\titleformat{\section}
 %  {\LARGE\scshape\raggedright}
@@ -45,16 +51,14 @@
 }
 
 \newcommand{\contact}[4]{
-  \noindent #1 \hfill #2\\
-  #3 \hfill #4
-%  {\center{#1 \hfill #2}
-%  \center{#3 \hfill #4}}
+  \noindent #1 \hfill \texttt{#2}\\
+  \texttt{#3} \hfill \texttt{#4}\\
 }
 
 \newpagestyle{main}[\footnotesize]{
   \headrule
-  \sethead[phone][Igor Kozlov][ikozlov@sfu.ca]
-          {phone}{Igor Kozlov}{ikozlov@sfu.ca}
+  \sethead[Igor Kozlov][][ikozlov@sfu.ca]
+          {Igor Kozlov}{}{ikozlov@sfu.ca}
   \setfoot[][][p\thepage]
           {}{}{p\thepage}
 }
