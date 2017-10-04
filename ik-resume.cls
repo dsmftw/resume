@@ -9,6 +9,12 @@
 \RequirePackage{titling}
 \RequirePackage{titleps}
 \RequirePackage[margin=.8in]{geometry}
+\RequirePackage[pdftex,
+        pdfauthor={Igor Kozlov},
+        pdftitle={Resume | Igor Kozlov},
+        pdfsubject={Resume},
+        pdfkeywords={Igor Kozlov, resume, curriculum vitae, software developer},
+        ]{hyperref}
 
 %\renewcommand*\familydefault{\sfdefault}
 

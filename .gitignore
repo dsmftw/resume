@@ -4,9 +4,13 @@
 *.ps
 *.log
 *.dvi
+*.out
 *.tex~
 *.backup
 !ik-resume.pdf
+
+### Folders ###
+/**/
 
 ### Vim ###
 # swap
